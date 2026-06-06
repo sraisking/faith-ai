@@ -39,6 +39,21 @@ export default function ChatInterface({ title, themeColor, apiEndpoint, welcomeM
   const [loadingMessageIdx, setLoadingMessageIdx] = useState(0);
   const supabase = createClient();
 
+  const [placeholder, setPlaceholder] = useState("Ask about what is right or wrong... (or tap mic to speak in any language)");
+
+  useEffect(() => {
+    const updatePlaceholder = () => {
+      if (window.innerWidth < 640) {
+        setPlaceholder("Ask a moral/ethical question...");
+      } else {
+        setPlaceholder("Ask about what is right or wrong... (or tap mic to speak in any language)");
+      }
+    };
+    updatePlaceholder();
+    window.addEventListener('resize', updatePlaceholder);
+    return () => window.removeEventListener('resize', updatePlaceholder);
+  }, []);
+
   const loadingMessages = {
     krishna: [
       "Consulting the Bhagavad Gita...",
@@ -236,7 +251,7 @@ export default function ChatInterface({ title, themeColor, apiEndpoint, welcomeM
   return (
     <div className="main-content" style={{ background: 'var(--bg-primary)' }}>
       {/* Header */}
-      <header className="glass-panel" style={{ 
+      <header className="glass-panel chat-header" style={{ 
         margin: '1rem', 
         padding: '1rem 12rem 1rem 2rem', // Added right padding to prevent overlap with global AuthHeader
         display: 'flex', 
@@ -282,7 +297,7 @@ export default function ChatInterface({ title, themeColor, apiEndpoint, welcomeM
       </header>
 
       {/* Chat Area */}
-      <div className="container" style={{ flex: 1, overflowY: 'auto', padding: '1rem 0', display: 'flex', flexDirection: 'column', gap: '1.5rem', width: '100%', maxWidth: '800px' }}>
+      <div className="container chat-messages-container" style={{ flex: 1, overflowY: 'auto', padding: '1rem 0', display: 'flex', flexDirection: 'column', gap: '1.5rem', width: '100%', maxWidth: '800px' }}>
         {messages.map((msg) => (
           <div key={msg.id} style={{
             display: 'flex',
@@ -290,7 +305,7 @@ export default function ChatInterface({ title, themeColor, apiEndpoint, welcomeM
             alignItems: msg.role === 'user' ? 'flex-end' : 'flex-start',
             width: '100%'
           }}>
-            <div className={`glass-card animate-fade-in ${msg.role === 'user' ? 'user-msg' : 'ai-msg'}`} style={{
+            <div className={`glass-card animate-fade-in chat-bubble ${msg.role === 'user' ? 'user-msg' : 'ai-msg'}`} style={{
               padding: '1rem 1.5rem',
               maxWidth: '80%',
               background: msg.role === 'user' ? themeVar : 'var(--bg-glass)',
@@ -405,7 +420,7 @@ export default function ChatInterface({ title, themeColor, apiEndpoint, welcomeM
       )}
 
       {/* Input Area */}
-      <div style={{ padding: '1rem 2rem 2rem 2rem', display: 'flex', justifyContent: 'center' }}>
+      <div className="chat-input-wrapper" style={{ padding: '1rem 2rem 2rem 2rem', display: 'flex', justifyContent: 'center' }}>
         <form onSubmit={handleSubmit} style={{ width: '100%', maxWidth: '800px', display: 'flex', gap: '1rem' }}>
           <button
             type="button"
@@ -435,7 +450,7 @@ export default function ChatInterface({ title, themeColor, apiEndpoint, welcomeM
             value={input}
             onChange={(e) => setInput(e.target.value)}
             disabled={!user && messages.filter(m => m.role === 'user').length >= 2}
-            placeholder={(!user && messages.filter(m => m.role === 'user').length >= 2) ? "Free limit reached. Please sign in to continue chatting." : "Ask about what is right or wrong... (or tap mic to speak in any language)"}
+            placeholder={(!user && messages.filter(m => m.role === 'user').length >= 2) ? "Free limit reached. Please sign in." : placeholder}
             className="glass-panel"
             style={{
               flex: 1,

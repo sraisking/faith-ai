@@ -27,17 +27,17 @@ export default function Home() {
       </div>
 
       <div className="container" style={{ textAlign: 'center', zIndex: 10, position: 'relative' }}>
-        <h1 className="gradient-text animate-fade-in" style={{ fontSize: '4rem', fontWeight: 700, marginBottom: '1rem', textShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
+        <h1 className="gradient-text animate-fade-in home-title" style={{ fontSize: '4rem', fontWeight: 700, marginBottom: '1rem', textShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
           Faith AI
         </h1>
-        <p className="animate-fade-in animate-delay-1" style={{ fontSize: '1.25rem', color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto 4rem', textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>
+        <p className="animate-fade-in animate-delay-1 home-description" style={{ fontSize: '1.25rem', color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto 4rem', textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>
           Seek moral and ethical guidance inspired by ancient wisdom. Ask your questions and receive answers rooted in profound religious texts.
         </p>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', maxWidth: '1000px', margin: '0 auto' }}>
+        <div className="home-grid">
 
           {/* Ask Krishna */}
-          <Link href="/krishna" className="glass-card animate-fade-in animate-delay-1" style={{ padding: '3rem 2rem', textDecoration: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', borderTop: '4px solid var(--theme-krishna)' }}>
+          <Link href="/krishna" className="glass-card animate-fade-in animate-delay-1 home-card" style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', borderTop: '4px solid var(--theme-krishna)' }}>
             <div style={{ padding: '1.5rem', borderRadius: '50%', background: 'var(--theme-krishna-glow)', color: 'var(--theme-krishna)' }}>
               <span style={{ fontSize: '48px', lineHeight: 1, fontFamily: 'system-ui' }}>ॐ</span>
             </div>
@@ -46,7 +46,7 @@ export default function Home() {
           </Link>
 
           {/* Ask Bible - Coming Soon */}
-          <div className="glass-card animate-fade-in animate-delay-2" style={{ padding: '3rem 2rem', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', borderTop: '4px solid var(--theme-bible)', position: 'relative', opacity: 0.55, cursor: 'not-allowed', userSelect: 'none', pointerEvents: 'none' }}>
+          <div className="glass-card animate-fade-in animate-delay-2 home-card" style={{ borderTop: '4px solid var(--theme-bible)', position: 'relative', opacity: 0.55, cursor: 'not-allowed', userSelect: 'none', pointerEvents: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
             <div style={{ position: 'absolute', top: '1rem', right: '1rem', background: 'linear-gradient(135deg, #3b82f6, #6366f1)', padding: '0.25rem 0.85rem', borderRadius: '999px', fontSize: '0.65rem', fontWeight: 700, letterSpacing: '0.1em', color: '#fff', textTransform: 'uppercase', boxShadow: '0 2px 8px rgba(99,102,241,0.4)' }}>
               Coming Soon
             </div>
@@ -59,7 +59,7 @@ export default function Home() {
           </div>
 
           {/* Ask Prophet - Coming Soon */}
-          <div className="glass-card animate-fade-in animate-delay-3" style={{ padding: '3rem 2rem', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', borderTop: '4px solid var(--theme-quran)', position: 'relative', opacity: 0.55, cursor: 'not-allowed', userSelect: 'none', pointerEvents: 'none' }}>
+          <div className="glass-card animate-fade-in animate-delay-3 home-card" style={{ borderTop: '4px solid var(--theme-quran)', position: 'relative', opacity: 0.55, cursor: 'not-allowed', userSelect: 'none', pointerEvents: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
             <div style={{ position: 'absolute', top: '1rem', right: '1rem', background: 'linear-gradient(135deg, #10b981, #059669)', padding: '0.25rem 0.85rem', borderRadius: '999px', fontSize: '0.65rem', fontWeight: 700, letterSpacing: '0.1em', color: '#fff', textTransform: 'uppercase', boxShadow: '0 2px 8px rgba(16,185,129,0.4)' }}>
               Coming Soon
             </div>

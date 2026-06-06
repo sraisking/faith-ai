@@ -221,9 +221,232 @@ html, body {
 .trail-ring-2 { color: #3b82f6; background: conic-gradient(from 30deg, transparent 0deg, rgba(59, 130, 246, 0.8) 90deg, transparent 90deg); }
 .trail-ring-3 { color: #10b981; background: conic-gradient(from 150deg, transparent 0deg, rgba(16, 185, 129, 0.8) 90deg, transparent 90deg); }
 
+/* Base Classes for landing, login and chat components */
+.home-title {
+  /* Inherits existing styles, handled in media queries */
+}
+
+.home-description {
+  /* Inherits existing styles */
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.home-card {
+  padding: 3rem 2rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.chat-header {
+  margin: 1rem; 
+  padding: 1rem 12rem 1rem 2rem; 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+  border-radius: 16px;
+}
+
+.chat-messages-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.chat-bubble {
+  padding: 1rem 1.5rem;
+  max-width: 80%;
+}
+
+.chat-bubble.user-msg {
+  border-radius: 24px 24px 4px 24px;
+}
+
+.chat-bubble.ai-msg {
+  border-radius: 24px 24px 24px 4px;
+}
+
+.chat-input-wrapper {
+  padding: 1rem 2rem 2rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.login-card {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 450px;
+  padding: 3rem 2.5rem;
+  margin: 1rem;
+  background: rgba(20, 20, 30, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive media queries */
 @media (max-width: 768px) {
   .symbols-orbit {
     width: 320px;
     height: 320px;
   }
+
+  .orbit-icon-wrapper {
+    width: 48px !important;
+    height: 48px !important;
+    margin-top: -24px !important;
+    margin-left: -24px !important;
+  }
+
+  .orbit-icon-wrapper span {
+    font-size: 24px !important;
+  }
+
+  .orbit-slot-2 span {
+    transform: translateY(-1px) !important;
+  }
+
+  .hidden-mobile {
+    display: none !important;
+  }
+
+  /* Home landing page responsive styles */
+  .home-title {
+    font-size: 2.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .home-description {
+    font-size: 1rem !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .home-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    gap: 1.25rem !important;
+  }
+
+  .home-card {
+    padding: 2rem 1.5rem !important;
+  }
+
+  /* Chat Interface responsive styles */
+  .chat-header {
+    margin: 0.5rem !important;
+    padding: 0.75rem 5rem 0.75rem 1rem !important;
+    border-radius: 12px !important;
+  }
+
+  .chat-header h1 {
+    font-size: 1.1rem !important;
+  }
+
+  .chat-header button {
+    padding: 0.4rem 0.75rem !important;
+    font-size: 0.85rem !important;
+    border-radius: 6px !important;
+  }
+
+  .chat-messages-container {
+    padding: 0.75rem 0.75rem !important;
+    gap: 1rem !important;
+  }
+
+  .chat-bubble {
+    max-width: 90% !important;
+    padding: 0.85rem 1.15rem !important;
+  }
+
+  .chat-bubble.user-msg {
+    border-radius: 18px 18px 4px 18px !important;
+  }
+
+  .chat-bubble.ai-msg {
+    border-radius: 18px 18px 18px 4px !important;
+  }
+
+  .chat-input-wrapper {
+    padding: 0.75rem 1rem 1.25rem 1rem !important;
+  }
+
+  .chat-input-wrapper form {
+    gap: 0.5rem !important;
+  }
+
+  .chat-input-wrapper input {
+    padding: 0.75rem 1.25rem !important;
+    font-size: 0.95rem !important;
+  }
+
+  .chat-input-wrapper button {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .chat-input-wrapper button svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  /* Auth Header responsive styles */
+  .auth-header-container {
+    top: 0.75rem !important;
+    right: 0.75rem !important;
+    gap: 0.5rem !important;
+  }
+
+  .auth-header-container button,
+  .auth-header-container a {
+    padding: 0.4rem 0.75rem !important;
+    font-size: 0.8rem !important;
+    border-radius: 6px !important;
+  }
+
+  /* Login Card responsive styles */
+  .login-card {
+    padding: 2rem 1.5rem !important;
+    margin: 0.75rem !important;
+    border-radius: 20px !important;
+  }
+
+  .login-card h1 {
+    font-size: 2rem !important;
+  }
 }
+
+@media (max-width: 480px) {
+  .home-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  .home-card {
+    padding: 1.75rem 1.25rem !important;
+  }
+
+  .chat-header {
+    padding: 0.75rem 4.5rem 0.75rem 0.75rem !important;
+  }
+  
+  .chat-header h1 {
+    font-size: 1rem !important;
+  }
+}
+

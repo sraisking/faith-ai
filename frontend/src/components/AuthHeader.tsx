@@ -28,7 +28,7 @@ export default function AuthHeader() {
   };
 
   return (
-    <div style={{ position: 'absolute', top: '1rem', right: '1rem', zIndex: 50, display: 'flex', alignItems: 'center', gap: '1rem' }}>
+    <div className="auth-header-container" style={{ position: 'absolute', top: '1rem', right: '1rem', zIndex: 50, display: 'flex', alignItems: 'center', gap: '1rem' }}>
       {user ? (
         <>
           <span style={{ color: 'var(--text-secondary)', fontSize: '0.875rem' }} className="hidden-mobile">

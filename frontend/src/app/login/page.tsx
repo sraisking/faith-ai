@@ -53,7 +53,7 @@ export default function Login() {
       <div style={{ position: 'absolute', bottom: '25%', right: '25%', width: '400px', height: '400px', background: 'rgba(37, 99, 235, 0.2)', borderRadius: '50%', filter: 'blur(100px)', pointerEvents: 'none', mixBlendMode: 'screen' }} />
 
       {/* Login Card */}
-      <div className="glass-card" style={{
+      <div className="glass-card login-card" style={{
         position: 'relative',
         zIndex: 10,
         width: '100%',
