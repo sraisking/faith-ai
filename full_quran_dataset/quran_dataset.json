@@ -1,0 +1,3434 @@
+[
+  {
+    "book": "quran",
+    "chapter": 1,
+    "verse": 1,
+    "content": "Surah 1, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 1,
+    "verse": 2,
+    "content": "Surah 1, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 1,
+    "verse": 3,
+    "content": "Surah 1, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 1,
+    "verse": 4,
+    "content": "Surah 1, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 1,
+    "verse": 5,
+    "content": "Surah 1, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 1,
+    "verse": 6,
+    "content": "Surah 1, Ayah 6 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 1,
+    "verse": 7,
+    "content": "Surah 1, Ayah 7 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 2,
+    "verse": 1,
+    "content": "Surah 2, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 2,
+    "verse": 2,
+    "content": "Surah 2, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 2,
+    "verse": 3,
+    "content": "Surah 2, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 2,
+    "verse": 4,
+    "content": "Surah 2, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 2,
+    "verse": 5,
+    "content": "Surah 2, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 3,
+    "verse": 1,
+    "content": "Surah 3, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 3,
+    "verse": 2,
+    "content": "Surah 3, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 3,
+    "verse": 3,
+    "content": "Surah 3, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 3,
+    "verse": 4,
+    "content": "Surah 3, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 3,
+    "verse": 5,
+    "content": "Surah 3, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 4,
+    "verse": 1,
+    "content": "Surah 4, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 4,
+    "verse": 2,
+    "content": "Surah 4, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 4,
+    "verse": 3,
+    "content": "Surah 4, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 4,
+    "verse": 4,
+    "content": "Surah 4, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 4,
+    "verse": 5,
+    "content": "Surah 4, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 5,
+    "verse": 1,
+    "content": "Surah 5, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 5,
+    "verse": 2,
+    "content": "Surah 5, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 5,
+    "verse": 3,
+    "content": "Surah 5, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 5,
+    "verse": 4,
+    "content": "Surah 5, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 5,
+    "verse": 5,
+    "content": "Surah 5, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 6,
+    "verse": 1,
+    "content": "Surah 6, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 6,
+    "verse": 2,
+    "content": "Surah 6, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 6,
+    "verse": 3,
+    "content": "Surah 6, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 6,
+    "verse": 4,
+    "content": "Surah 6, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 6,
+    "verse": 5,
+    "content": "Surah 6, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 7,
+    "verse": 1,
+    "content": "Surah 7, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 7,
+    "verse": 2,
+    "content": "Surah 7, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 7,
+    "verse": 3,
+    "content": "Surah 7, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 7,
+    "verse": 4,
+    "content": "Surah 7, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 7,
+    "verse": 5,
+    "content": "Surah 7, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 8,
+    "verse": 1,
+    "content": "Surah 8, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 8,
+    "verse": 2,
+    "content": "Surah 8, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 8,
+    "verse": 3,
+    "content": "Surah 8, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 8,
+    "verse": 4,
+    "content": "Surah 8, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 8,
+    "verse": 5,
+    "content": "Surah 8, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 9,
+    "verse": 1,
+    "content": "Surah 9, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 9,
+    "verse": 2,
+    "content": "Surah 9, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 9,
+    "verse": 3,
+    "content": "Surah 9, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 9,
+    "verse": 4,
+    "content": "Surah 9, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 9,
+    "verse": 5,
+    "content": "Surah 9, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 10,
+    "verse": 1,
+    "content": "Surah 10, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 10,
+    "verse": 2,
+    "content": "Surah 10, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 10,
+    "verse": 3,
+    "content": "Surah 10, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 10,
+    "verse": 4,
+    "content": "Surah 10, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 10,
+    "verse": 5,
+    "content": "Surah 10, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 11,
+    "verse": 1,
+    "content": "Surah 11, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 11,
+    "verse": 2,
+    "content": "Surah 11, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 11,
+    "verse": 3,
+    "content": "Surah 11, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 11,
+    "verse": 4,
+    "content": "Surah 11, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 11,
+    "verse": 5,
+    "content": "Surah 11, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 12,
+    "verse": 1,
+    "content": "Surah 12, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 12,
+    "verse": 2,
+    "content": "Surah 12, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 12,
+    "verse": 3,
+    "content": "Surah 12, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 12,
+    "verse": 4,
+    "content": "Surah 12, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 12,
+    "verse": 5,
+    "content": "Surah 12, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 13,
+    "verse": 1,
+    "content": "Surah 13, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 13,
+    "verse": 2,
+    "content": "Surah 13, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 13,
+    "verse": 3,
+    "content": "Surah 13, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 13,
+    "verse": 4,
+    "content": "Surah 13, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 13,
+    "verse": 5,
+    "content": "Surah 13, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 14,
+    "verse": 1,
+    "content": "Surah 14, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 14,
+    "verse": 2,
+    "content": "Surah 14, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 14,
+    "verse": 3,
+    "content": "Surah 14, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 14,
+    "verse": 4,
+    "content": "Surah 14, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 14,
+    "verse": 5,
+    "content": "Surah 14, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 15,
+    "verse": 1,
+    "content": "Surah 15, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 15,
+    "verse": 2,
+    "content": "Surah 15, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 15,
+    "verse": 3,
+    "content": "Surah 15, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 15,
+    "verse": 4,
+    "content": "Surah 15, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 15,
+    "verse": 5,
+    "content": "Surah 15, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 16,
+    "verse": 1,
+    "content": "Surah 16, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 16,
+    "verse": 2,
+    "content": "Surah 16, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 16,
+    "verse": 3,
+    "content": "Surah 16, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 16,
+    "verse": 4,
+    "content": "Surah 16, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 16,
+    "verse": 5,
+    "content": "Surah 16, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 17,
+    "verse": 1,
+    "content": "Surah 17, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 17,
+    "verse": 2,
+    "content": "Surah 17, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 17,
+    "verse": 3,
+    "content": "Surah 17, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 17,
+    "verse": 4,
+    "content": "Surah 17, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 17,
+    "verse": 5,
+    "content": "Surah 17, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 18,
+    "verse": 1,
+    "content": "Surah 18, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 18,
+    "verse": 2,
+    "content": "Surah 18, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 18,
+    "verse": 3,
+    "content": "Surah 18, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 18,
+    "verse": 4,
+    "content": "Surah 18, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 18,
+    "verse": 5,
+    "content": "Surah 18, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 19,
+    "verse": 1,
+    "content": "Surah 19, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 19,
+    "verse": 2,
+    "content": "Surah 19, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 19,
+    "verse": 3,
+    "content": "Surah 19, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 19,
+    "verse": 4,
+    "content": "Surah 19, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 19,
+    "verse": 5,
+    "content": "Surah 19, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 20,
+    "verse": 1,
+    "content": "Surah 20, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 20,
+    "verse": 2,
+    "content": "Surah 20, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 20,
+    "verse": 3,
+    "content": "Surah 20, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 20,
+    "verse": 4,
+    "content": "Surah 20, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 20,
+    "verse": 5,
+    "content": "Surah 20, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 21,
+    "verse": 1,
+    "content": "Surah 21, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 21,
+    "verse": 2,
+    "content": "Surah 21, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 21,
+    "verse": 3,
+    "content": "Surah 21, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 21,
+    "verse": 4,
+    "content": "Surah 21, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 21,
+    "verse": 5,
+    "content": "Surah 21, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 22,
+    "verse": 1,
+    "content": "Surah 22, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 22,
+    "verse": 2,
+    "content": "Surah 22, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 22,
+    "verse": 3,
+    "content": "Surah 22, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 22,
+    "verse": 4,
+    "content": "Surah 22, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 22,
+    "verse": 5,
+    "content": "Surah 22, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 23,
+    "verse": 1,
+    "content": "Surah 23, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 23,
+    "verse": 2,
+    "content": "Surah 23, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 23,
+    "verse": 3,
+    "content": "Surah 23, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 23,
+    "verse": 4,
+    "content": "Surah 23, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 23,
+    "verse": 5,
+    "content": "Surah 23, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 24,
+    "verse": 1,
+    "content": "Surah 24, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 24,
+    "verse": 2,
+    "content": "Surah 24, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 24,
+    "verse": 3,
+    "content": "Surah 24, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 24,
+    "verse": 4,
+    "content": "Surah 24, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 24,
+    "verse": 5,
+    "content": "Surah 24, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 25,
+    "verse": 1,
+    "content": "Surah 25, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 25,
+    "verse": 2,
+    "content": "Surah 25, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 25,
+    "verse": 3,
+    "content": "Surah 25, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 25,
+    "verse": 4,
+    "content": "Surah 25, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 25,
+    "verse": 5,
+    "content": "Surah 25, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 26,
+    "verse": 1,
+    "content": "Surah 26, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 26,
+    "verse": 2,
+    "content": "Surah 26, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 26,
+    "verse": 3,
+    "content": "Surah 26, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 26,
+    "verse": 4,
+    "content": "Surah 26, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 26,
+    "verse": 5,
+    "content": "Surah 26, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 27,
+    "verse": 1,
+    "content": "Surah 27, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 27,
+    "verse": 2,
+    "content": "Surah 27, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 27,
+    "verse": 3,
+    "content": "Surah 27, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 27,
+    "verse": 4,
+    "content": "Surah 27, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 27,
+    "verse": 5,
+    "content": "Surah 27, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 28,
+    "verse": 1,
+    "content": "Surah 28, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 28,
+    "verse": 2,
+    "content": "Surah 28, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 28,
+    "verse": 3,
+    "content": "Surah 28, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 28,
+    "verse": 4,
+    "content": "Surah 28, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 28,
+    "verse": 5,
+    "content": "Surah 28, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 29,
+    "verse": 1,
+    "content": "Surah 29, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 29,
+    "verse": 2,
+    "content": "Surah 29, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 29,
+    "verse": 3,
+    "content": "Surah 29, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 29,
+    "verse": 4,
+    "content": "Surah 29, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 29,
+    "verse": 5,
+    "content": "Surah 29, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 30,
+    "verse": 1,
+    "content": "Surah 30, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 30,
+    "verse": 2,
+    "content": "Surah 30, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 30,
+    "verse": 3,
+    "content": "Surah 30, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 30,
+    "verse": 4,
+    "content": "Surah 30, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 30,
+    "verse": 5,
+    "content": "Surah 30, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 31,
+    "verse": 1,
+    "content": "Surah 31, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 31,
+    "verse": 2,
+    "content": "Surah 31, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 31,
+    "verse": 3,
+    "content": "Surah 31, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 31,
+    "verse": 4,
+    "content": "Surah 31, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 31,
+    "verse": 5,
+    "content": "Surah 31, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 32,
+    "verse": 1,
+    "content": "Surah 32, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 32,
+    "verse": 2,
+    "content": "Surah 32, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 32,
+    "verse": 3,
+    "content": "Surah 32, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 32,
+    "verse": 4,
+    "content": "Surah 32, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 32,
+    "verse": 5,
+    "content": "Surah 32, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 33,
+    "verse": 1,
+    "content": "Surah 33, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 33,
+    "verse": 2,
+    "content": "Surah 33, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 33,
+    "verse": 3,
+    "content": "Surah 33, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 33,
+    "verse": 4,
+    "content": "Surah 33, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 33,
+    "verse": 5,
+    "content": "Surah 33, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 34,
+    "verse": 1,
+    "content": "Surah 34, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 34,
+    "verse": 2,
+    "content": "Surah 34, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 34,
+    "verse": 3,
+    "content": "Surah 34, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 34,
+    "verse": 4,
+    "content": "Surah 34, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 34,
+    "verse": 5,
+    "content": "Surah 34, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 35,
+    "verse": 1,
+    "content": "Surah 35, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 35,
+    "verse": 2,
+    "content": "Surah 35, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 35,
+    "verse": 3,
+    "content": "Surah 35, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 35,
+    "verse": 4,
+    "content": "Surah 35, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 35,
+    "verse": 5,
+    "content": "Surah 35, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 36,
+    "verse": 1,
+    "content": "Surah 36, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 36,
+    "verse": 2,
+    "content": "Surah 36, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 36,
+    "verse": 3,
+    "content": "Surah 36, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 36,
+    "verse": 4,
+    "content": "Surah 36, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 36,
+    "verse": 5,
+    "content": "Surah 36, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 37,
+    "verse": 1,
+    "content": "Surah 37, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 37,
+    "verse": 2,
+    "content": "Surah 37, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 37,
+    "verse": 3,
+    "content": "Surah 37, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 37,
+    "verse": 4,
+    "content": "Surah 37, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 37,
+    "verse": 5,
+    "content": "Surah 37, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 38,
+    "verse": 1,
+    "content": "Surah 38, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 38,
+    "verse": 2,
+    "content": "Surah 38, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 38,
+    "verse": 3,
+    "content": "Surah 38, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 38,
+    "verse": 4,
+    "content": "Surah 38, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 38,
+    "verse": 5,
+    "content": "Surah 38, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 39,
+    "verse": 1,
+    "content": "Surah 39, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 39,
+    "verse": 2,
+    "content": "Surah 39, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 39,
+    "verse": 3,
+    "content": "Surah 39, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 39,
+    "verse": 4,
+    "content": "Surah 39, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 39,
+    "verse": 5,
+    "content": "Surah 39, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 40,
+    "verse": 1,
+    "content": "Surah 40, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 40,
+    "verse": 2,
+    "content": "Surah 40, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 40,
+    "verse": 3,
+    "content": "Surah 40, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 40,
+    "verse": 4,
+    "content": "Surah 40, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 40,
+    "verse": 5,
+    "content": "Surah 40, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 41,
+    "verse": 1,
+    "content": "Surah 41, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 41,
+    "verse": 2,
+    "content": "Surah 41, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 41,
+    "verse": 3,
+    "content": "Surah 41, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 41,
+    "verse": 4,
+    "content": "Surah 41, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 41,
+    "verse": 5,
+    "content": "Surah 41, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 42,
+    "verse": 1,
+    "content": "Surah 42, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 42,
+    "verse": 2,
+    "content": "Surah 42, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 42,
+    "verse": 3,
+    "content": "Surah 42, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 42,
+    "verse": 4,
+    "content": "Surah 42, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 42,
+    "verse": 5,
+    "content": "Surah 42, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 43,
+    "verse": 1,
+    "content": "Surah 43, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 43,
+    "verse": 2,
+    "content": "Surah 43, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 43,
+    "verse": 3,
+    "content": "Surah 43, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 43,
+    "verse": 4,
+    "content": "Surah 43, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 43,
+    "verse": 5,
+    "content": "Surah 43, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 44,
+    "verse": 1,
+    "content": "Surah 44, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 44,
+    "verse": 2,
+    "content": "Surah 44, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 44,
+    "verse": 3,
+    "content": "Surah 44, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 44,
+    "verse": 4,
+    "content": "Surah 44, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 44,
+    "verse": 5,
+    "content": "Surah 44, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 45,
+    "verse": 1,
+    "content": "Surah 45, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 45,
+    "verse": 2,
+    "content": "Surah 45, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 45,
+    "verse": 3,
+    "content": "Surah 45, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 45,
+    "verse": 4,
+    "content": "Surah 45, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 45,
+    "verse": 5,
+    "content": "Surah 45, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 46,
+    "verse": 1,
+    "content": "Surah 46, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 46,
+    "verse": 2,
+    "content": "Surah 46, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 46,
+    "verse": 3,
+    "content": "Surah 46, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 46,
+    "verse": 4,
+    "content": "Surah 46, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 46,
+    "verse": 5,
+    "content": "Surah 46, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 47,
+    "verse": 1,
+    "content": "Surah 47, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 47,
+    "verse": 2,
+    "content": "Surah 47, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 47,
+    "verse": 3,
+    "content": "Surah 47, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 47,
+    "verse": 4,
+    "content": "Surah 47, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 47,
+    "verse": 5,
+    "content": "Surah 47, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 48,
+    "verse": 1,
+    "content": "Surah 48, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 48,
+    "verse": 2,
+    "content": "Surah 48, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 48,
+    "verse": 3,
+    "content": "Surah 48, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 48,
+    "verse": 4,
+    "content": "Surah 48, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 48,
+    "verse": 5,
+    "content": "Surah 48, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 49,
+    "verse": 1,
+    "content": "Surah 49, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 49,
+    "verse": 2,
+    "content": "Surah 49, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 49,
+    "verse": 3,
+    "content": "Surah 49, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 49,
+    "verse": 4,
+    "content": "Surah 49, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 49,
+    "verse": 5,
+    "content": "Surah 49, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 50,
+    "verse": 1,
+    "content": "Surah 50, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 50,
+    "verse": 2,
+    "content": "Surah 50, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 50,
+    "verse": 3,
+    "content": "Surah 50, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 50,
+    "verse": 4,
+    "content": "Surah 50, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 50,
+    "verse": 5,
+    "content": "Surah 50, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 51,
+    "verse": 1,
+    "content": "Surah 51, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 51,
+    "verse": 2,
+    "content": "Surah 51, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 51,
+    "verse": 3,
+    "content": "Surah 51, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 51,
+    "verse": 4,
+    "content": "Surah 51, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 51,
+    "verse": 5,
+    "content": "Surah 51, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 52,
+    "verse": 1,
+    "content": "Surah 52, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 52,
+    "verse": 2,
+    "content": "Surah 52, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 52,
+    "verse": 3,
+    "content": "Surah 52, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 52,
+    "verse": 4,
+    "content": "Surah 52, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 52,
+    "verse": 5,
+    "content": "Surah 52, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 53,
+    "verse": 1,
+    "content": "Surah 53, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 53,
+    "verse": 2,
+    "content": "Surah 53, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 53,
+    "verse": 3,
+    "content": "Surah 53, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 53,
+    "verse": 4,
+    "content": "Surah 53, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 53,
+    "verse": 5,
+    "content": "Surah 53, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 54,
+    "verse": 1,
+    "content": "Surah 54, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 54,
+    "verse": 2,
+    "content": "Surah 54, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 54,
+    "verse": 3,
+    "content": "Surah 54, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 54,
+    "verse": 4,
+    "content": "Surah 54, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 54,
+    "verse": 5,
+    "content": "Surah 54, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 55,
+    "verse": 1,
+    "content": "Surah 55, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 55,
+    "verse": 2,
+    "content": "Surah 55, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 55,
+    "verse": 3,
+    "content": "Surah 55, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 55,
+    "verse": 4,
+    "content": "Surah 55, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 55,
+    "verse": 5,
+    "content": "Surah 55, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 56,
+    "verse": 1,
+    "content": "Surah 56, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 56,
+    "verse": 2,
+    "content": "Surah 56, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 56,
+    "verse": 3,
+    "content": "Surah 56, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 56,
+    "verse": 4,
+    "content": "Surah 56, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 56,
+    "verse": 5,
+    "content": "Surah 56, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 57,
+    "verse": 1,
+    "content": "Surah 57, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 57,
+    "verse": 2,
+    "content": "Surah 57, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 57,
+    "verse": 3,
+    "content": "Surah 57, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 57,
+    "verse": 4,
+    "content": "Surah 57, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 57,
+    "verse": 5,
+    "content": "Surah 57, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 58,
+    "verse": 1,
+    "content": "Surah 58, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 58,
+    "verse": 2,
+    "content": "Surah 58, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 58,
+    "verse": 3,
+    "content": "Surah 58, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 58,
+    "verse": 4,
+    "content": "Surah 58, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 58,
+    "verse": 5,
+    "content": "Surah 58, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 59,
+    "verse": 1,
+    "content": "Surah 59, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 59,
+    "verse": 2,
+    "content": "Surah 59, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 59,
+    "verse": 3,
+    "content": "Surah 59, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 59,
+    "verse": 4,
+    "content": "Surah 59, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 59,
+    "verse": 5,
+    "content": "Surah 59, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 60,
+    "verse": 1,
+    "content": "Surah 60, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 60,
+    "verse": 2,
+    "content": "Surah 60, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 60,
+    "verse": 3,
+    "content": "Surah 60, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 60,
+    "verse": 4,
+    "content": "Surah 60, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 60,
+    "verse": 5,
+    "content": "Surah 60, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 61,
+    "verse": 1,
+    "content": "Surah 61, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 61,
+    "verse": 2,
+    "content": "Surah 61, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 61,
+    "verse": 3,
+    "content": "Surah 61, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 61,
+    "verse": 4,
+    "content": "Surah 61, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 61,
+    "verse": 5,
+    "content": "Surah 61, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 62,
+    "verse": 1,
+    "content": "Surah 62, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 62,
+    "verse": 2,
+    "content": "Surah 62, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 62,
+    "verse": 3,
+    "content": "Surah 62, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 62,
+    "verse": 4,
+    "content": "Surah 62, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 62,
+    "verse": 5,
+    "content": "Surah 62, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 63,
+    "verse": 1,
+    "content": "Surah 63, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 63,
+    "verse": 2,
+    "content": "Surah 63, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 63,
+    "verse": 3,
+    "content": "Surah 63, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 63,
+    "verse": 4,
+    "content": "Surah 63, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 63,
+    "verse": 5,
+    "content": "Surah 63, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 64,
+    "verse": 1,
+    "content": "Surah 64, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 64,
+    "verse": 2,
+    "content": "Surah 64, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 64,
+    "verse": 3,
+    "content": "Surah 64, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 64,
+    "verse": 4,
+    "content": "Surah 64, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 64,
+    "verse": 5,
+    "content": "Surah 64, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 65,
+    "verse": 1,
+    "content": "Surah 65, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 65,
+    "verse": 2,
+    "content": "Surah 65, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 65,
+    "verse": 3,
+    "content": "Surah 65, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 65,
+    "verse": 4,
+    "content": "Surah 65, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 65,
+    "verse": 5,
+    "content": "Surah 65, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 66,
+    "verse": 1,
+    "content": "Surah 66, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 66,
+    "verse": 2,
+    "content": "Surah 66, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 66,
+    "verse": 3,
+    "content": "Surah 66, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 66,
+    "verse": 4,
+    "content": "Surah 66, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 66,
+    "verse": 5,
+    "content": "Surah 66, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 67,
+    "verse": 1,
+    "content": "Surah 67, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 67,
+    "verse": 2,
+    "content": "Surah 67, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 67,
+    "verse": 3,
+    "content": "Surah 67, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 67,
+    "verse": 4,
+    "content": "Surah 67, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 67,
+    "verse": 5,
+    "content": "Surah 67, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 68,
+    "verse": 1,
+    "content": "Surah 68, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 68,
+    "verse": 2,
+    "content": "Surah 68, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 68,
+    "verse": 3,
+    "content": "Surah 68, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 68,
+    "verse": 4,
+    "content": "Surah 68, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 68,
+    "verse": 5,
+    "content": "Surah 68, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 69,
+    "verse": 1,
+    "content": "Surah 69, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 69,
+    "verse": 2,
+    "content": "Surah 69, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 69,
+    "verse": 3,
+    "content": "Surah 69, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 69,
+    "verse": 4,
+    "content": "Surah 69, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 69,
+    "verse": 5,
+    "content": "Surah 69, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 70,
+    "verse": 1,
+    "content": "Surah 70, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 70,
+    "verse": 2,
+    "content": "Surah 70, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 70,
+    "verse": 3,
+    "content": "Surah 70, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 70,
+    "verse": 4,
+    "content": "Surah 70, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 70,
+    "verse": 5,
+    "content": "Surah 70, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 71,
+    "verse": 1,
+    "content": "Surah 71, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 71,
+    "verse": 2,
+    "content": "Surah 71, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 71,
+    "verse": 3,
+    "content": "Surah 71, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 71,
+    "verse": 4,
+    "content": "Surah 71, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 71,
+    "verse": 5,
+    "content": "Surah 71, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 72,
+    "verse": 1,
+    "content": "Surah 72, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 72,
+    "verse": 2,
+    "content": "Surah 72, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 72,
+    "verse": 3,
+    "content": "Surah 72, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 72,
+    "verse": 4,
+    "content": "Surah 72, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 72,
+    "verse": 5,
+    "content": "Surah 72, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 73,
+    "verse": 1,
+    "content": "Surah 73, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 73,
+    "verse": 2,
+    "content": "Surah 73, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 73,
+    "verse": 3,
+    "content": "Surah 73, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 73,
+    "verse": 4,
+    "content": "Surah 73, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 73,
+    "verse": 5,
+    "content": "Surah 73, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 74,
+    "verse": 1,
+    "content": "Surah 74, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 74,
+    "verse": 2,
+    "content": "Surah 74, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 74,
+    "verse": 3,
+    "content": "Surah 74, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 74,
+    "verse": 4,
+    "content": "Surah 74, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 74,
+    "verse": 5,
+    "content": "Surah 74, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 75,
+    "verse": 1,
+    "content": "Surah 75, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 75,
+    "verse": 2,
+    "content": "Surah 75, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 75,
+    "verse": 3,
+    "content": "Surah 75, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 75,
+    "verse": 4,
+    "content": "Surah 75, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 75,
+    "verse": 5,
+    "content": "Surah 75, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 76,
+    "verse": 1,
+    "content": "Surah 76, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 76,
+    "verse": 2,
+    "content": "Surah 76, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 76,
+    "verse": 3,
+    "content": "Surah 76, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 76,
+    "verse": 4,
+    "content": "Surah 76, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 76,
+    "verse": 5,
+    "content": "Surah 76, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 77,
+    "verse": 1,
+    "content": "Surah 77, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 77,
+    "verse": 2,
+    "content": "Surah 77, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 77,
+    "verse": 3,
+    "content": "Surah 77, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 77,
+    "verse": 4,
+    "content": "Surah 77, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 77,
+    "verse": 5,
+    "content": "Surah 77, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 78,
+    "verse": 1,
+    "content": "Surah 78, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 78,
+    "verse": 2,
+    "content": "Surah 78, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 78,
+    "verse": 3,
+    "content": "Surah 78, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 78,
+    "verse": 4,
+    "content": "Surah 78, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 78,
+    "verse": 5,
+    "content": "Surah 78, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 79,
+    "verse": 1,
+    "content": "Surah 79, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 79,
+    "verse": 2,
+    "content": "Surah 79, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 79,
+    "verse": 3,
+    "content": "Surah 79, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 79,
+    "verse": 4,
+    "content": "Surah 79, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 79,
+    "verse": 5,
+    "content": "Surah 79, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 80,
+    "verse": 1,
+    "content": "Surah 80, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 80,
+    "verse": 2,
+    "content": "Surah 80, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 80,
+    "verse": 3,
+    "content": "Surah 80, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 80,
+    "verse": 4,
+    "content": "Surah 80, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 80,
+    "verse": 5,
+    "content": "Surah 80, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 81,
+    "verse": 1,
+    "content": "Surah 81, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 81,
+    "verse": 2,
+    "content": "Surah 81, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 81,
+    "verse": 3,
+    "content": "Surah 81, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 81,
+    "verse": 4,
+    "content": "Surah 81, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 81,
+    "verse": 5,
+    "content": "Surah 81, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 82,
+    "verse": 1,
+    "content": "Surah 82, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 82,
+    "verse": 2,
+    "content": "Surah 82, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 82,
+    "verse": 3,
+    "content": "Surah 82, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 82,
+    "verse": 4,
+    "content": "Surah 82, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 82,
+    "verse": 5,
+    "content": "Surah 82, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 83,
+    "verse": 1,
+    "content": "Surah 83, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 83,
+    "verse": 2,
+    "content": "Surah 83, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 83,
+    "verse": 3,
+    "content": "Surah 83, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 83,
+    "verse": 4,
+    "content": "Surah 83, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 83,
+    "verse": 5,
+    "content": "Surah 83, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 84,
+    "verse": 1,
+    "content": "Surah 84, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 84,
+    "verse": 2,
+    "content": "Surah 84, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 84,
+    "verse": 3,
+    "content": "Surah 84, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 84,
+    "verse": 4,
+    "content": "Surah 84, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 84,
+    "verse": 5,
+    "content": "Surah 84, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 85,
+    "verse": 1,
+    "content": "Surah 85, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 85,
+    "verse": 2,
+    "content": "Surah 85, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 85,
+    "verse": 3,
+    "content": "Surah 85, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 85,
+    "verse": 4,
+    "content": "Surah 85, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 85,
+    "verse": 5,
+    "content": "Surah 85, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 86,
+    "verse": 1,
+    "content": "Surah 86, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 86,
+    "verse": 2,
+    "content": "Surah 86, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 86,
+    "verse": 3,
+    "content": "Surah 86, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 86,
+    "verse": 4,
+    "content": "Surah 86, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 86,
+    "verse": 5,
+    "content": "Surah 86, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 87,
+    "verse": 1,
+    "content": "Surah 87, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 87,
+    "verse": 2,
+    "content": "Surah 87, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 87,
+    "verse": 3,
+    "content": "Surah 87, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 87,
+    "verse": 4,
+    "content": "Surah 87, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 87,
+    "verse": 5,
+    "content": "Surah 87, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 88,
+    "verse": 1,
+    "content": "Surah 88, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 88,
+    "verse": 2,
+    "content": "Surah 88, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 88,
+    "verse": 3,
+    "content": "Surah 88, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 88,
+    "verse": 4,
+    "content": "Surah 88, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 88,
+    "verse": 5,
+    "content": "Surah 88, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 89,
+    "verse": 1,
+    "content": "Surah 89, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 89,
+    "verse": 2,
+    "content": "Surah 89, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 89,
+    "verse": 3,
+    "content": "Surah 89, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 89,
+    "verse": 4,
+    "content": "Surah 89, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 89,
+    "verse": 5,
+    "content": "Surah 89, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 90,
+    "verse": 1,
+    "content": "Surah 90, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 90,
+    "verse": 2,
+    "content": "Surah 90, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 90,
+    "verse": 3,
+    "content": "Surah 90, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 90,
+    "verse": 4,
+    "content": "Surah 90, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 90,
+    "verse": 5,
+    "content": "Surah 90, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 91,
+    "verse": 1,
+    "content": "Surah 91, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 91,
+    "verse": 2,
+    "content": "Surah 91, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 91,
+    "verse": 3,
+    "content": "Surah 91, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 91,
+    "verse": 4,
+    "content": "Surah 91, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 91,
+    "verse": 5,
+    "content": "Surah 91, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 92,
+    "verse": 1,
+    "content": "Surah 92, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 92,
+    "verse": 2,
+    "content": "Surah 92, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 92,
+    "verse": 3,
+    "content": "Surah 92, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 92,
+    "verse": 4,
+    "content": "Surah 92, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 92,
+    "verse": 5,
+    "content": "Surah 92, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 93,
+    "verse": 1,
+    "content": "Surah 93, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 93,
+    "verse": 2,
+    "content": "Surah 93, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 93,
+    "verse": 3,
+    "content": "Surah 93, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 93,
+    "verse": 4,
+    "content": "Surah 93, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 93,
+    "verse": 5,
+    "content": "Surah 93, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 94,
+    "verse": 1,
+    "content": "Surah 94, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 94,
+    "verse": 2,
+    "content": "Surah 94, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 94,
+    "verse": 3,
+    "content": "Surah 94, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 94,
+    "verse": 4,
+    "content": "Surah 94, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 94,
+    "verse": 5,
+    "content": "Surah 94, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 95,
+    "verse": 1,
+    "content": "Surah 95, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 95,
+    "verse": 2,
+    "content": "Surah 95, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 95,
+    "verse": 3,
+    "content": "Surah 95, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 95,
+    "verse": 4,
+    "content": "Surah 95, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 95,
+    "verse": 5,
+    "content": "Surah 95, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 96,
+    "verse": 1,
+    "content": "Surah 96, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 96,
+    "verse": 2,
+    "content": "Surah 96, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 96,
+    "verse": 3,
+    "content": "Surah 96, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 96,
+    "verse": 4,
+    "content": "Surah 96, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 96,
+    "verse": 5,
+    "content": "Surah 96, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 97,
+    "verse": 1,
+    "content": "Surah 97, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 97,
+    "verse": 2,
+    "content": "Surah 97, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 97,
+    "verse": 3,
+    "content": "Surah 97, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 97,
+    "verse": 4,
+    "content": "Surah 97, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 97,
+    "verse": 5,
+    "content": "Surah 97, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 98,
+    "verse": 1,
+    "content": "Surah 98, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 98,
+    "verse": 2,
+    "content": "Surah 98, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 98,
+    "verse": 3,
+    "content": "Surah 98, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 98,
+    "verse": 4,
+    "content": "Surah 98, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 98,
+    "verse": 5,
+    "content": "Surah 98, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 99,
+    "verse": 1,
+    "content": "Surah 99, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 99,
+    "verse": 2,
+    "content": "Surah 99, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 99,
+    "verse": 3,
+    "content": "Surah 99, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 99,
+    "verse": 4,
+    "content": "Surah 99, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 99,
+    "verse": 5,
+    "content": "Surah 99, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 100,
+    "verse": 1,
+    "content": "Surah 100, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 100,
+    "verse": 2,
+    "content": "Surah 100, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 100,
+    "verse": 3,
+    "content": "Surah 100, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 100,
+    "verse": 4,
+    "content": "Surah 100, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 100,
+    "verse": 5,
+    "content": "Surah 100, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 101,
+    "verse": 1,
+    "content": "Surah 101, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 101,
+    "verse": 2,
+    "content": "Surah 101, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 101,
+    "verse": 3,
+    "content": "Surah 101, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 101,
+    "verse": 4,
+    "content": "Surah 101, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 101,
+    "verse": 5,
+    "content": "Surah 101, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 102,
+    "verse": 1,
+    "content": "Surah 102, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 102,
+    "verse": 2,
+    "content": "Surah 102, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 102,
+    "verse": 3,
+    "content": "Surah 102, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 102,
+    "verse": 4,
+    "content": "Surah 102, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 102,
+    "verse": 5,
+    "content": "Surah 102, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 103,
+    "verse": 1,
+    "content": "Surah 103, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 103,
+    "verse": 2,
+    "content": "Surah 103, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 103,
+    "verse": 3,
+    "content": "Surah 103, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 103,
+    "verse": 4,
+    "content": "Surah 103, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 103,
+    "verse": 5,
+    "content": "Surah 103, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 104,
+    "verse": 1,
+    "content": "Surah 104, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 104,
+    "verse": 2,
+    "content": "Surah 104, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 104,
+    "verse": 3,
+    "content": "Surah 104, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 104,
+    "verse": 4,
+    "content": "Surah 104, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 104,
+    "verse": 5,
+    "content": "Surah 104, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 105,
+    "verse": 1,
+    "content": "Surah 105, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 105,
+    "verse": 2,
+    "content": "Surah 105, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 105,
+    "verse": 3,
+    "content": "Surah 105, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 105,
+    "verse": 4,
+    "content": "Surah 105, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 105,
+    "verse": 5,
+    "content": "Surah 105, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 106,
+    "verse": 1,
+    "content": "Surah 106, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 106,
+    "verse": 2,
+    "content": "Surah 106, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 106,
+    "verse": 3,
+    "content": "Surah 106, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 106,
+    "verse": 4,
+    "content": "Surah 106, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 106,
+    "verse": 5,
+    "content": "Surah 106, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 107,
+    "verse": 1,
+    "content": "Surah 107, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 107,
+    "verse": 2,
+    "content": "Surah 107, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 107,
+    "verse": 3,
+    "content": "Surah 107, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 107,
+    "verse": 4,
+    "content": "Surah 107, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 107,
+    "verse": 5,
+    "content": "Surah 107, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 108,
+    "verse": 1,
+    "content": "Surah 108, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 108,
+    "verse": 2,
+    "content": "Surah 108, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 108,
+    "verse": 3,
+    "content": "Surah 108, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 108,
+    "verse": 4,
+    "content": "Surah 108, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 108,
+    "verse": 5,
+    "content": "Surah 108, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 109,
+    "verse": 1,
+    "content": "Surah 109, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 109,
+    "verse": 2,
+    "content": "Surah 109, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 109,
+    "verse": 3,
+    "content": "Surah 109, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 109,
+    "verse": 4,
+    "content": "Surah 109, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 109,
+    "verse": 5,
+    "content": "Surah 109, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 110,
+    "verse": 1,
+    "content": "Surah 110, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 110,
+    "verse": 2,
+    "content": "Surah 110, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 110,
+    "verse": 3,
+    "content": "Surah 110, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 110,
+    "verse": 4,
+    "content": "Surah 110, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 110,
+    "verse": 5,
+    "content": "Surah 110, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 111,
+    "verse": 1,
+    "content": "Surah 111, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 111,
+    "verse": 2,
+    "content": "Surah 111, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 111,
+    "verse": 3,
+    "content": "Surah 111, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 111,
+    "verse": 4,
+    "content": "Surah 111, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 111,
+    "verse": 5,
+    "content": "Surah 111, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 112,
+    "verse": 1,
+    "content": "Surah 112, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 112,
+    "verse": 2,
+    "content": "Surah 112, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 112,
+    "verse": 3,
+    "content": "Surah 112, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 112,
+    "verse": 4,
+    "content": "Surah 112, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 112,
+    "verse": 5,
+    "content": "Surah 112, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 113,
+    "verse": 1,
+    "content": "Surah 113, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 113,
+    "verse": 2,
+    "content": "Surah 113, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 113,
+    "verse": 3,
+    "content": "Surah 113, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 113,
+    "verse": 4,
+    "content": "Surah 113, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 113,
+    "verse": 5,
+    "content": "Surah 113, Ayah 5 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 114,
+    "verse": 1,
+    "content": "Surah 114, Ayah 1 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 114,
+    "verse": 2,
+    "content": "Surah 114, Ayah 2 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 114,
+    "verse": 3,
+    "content": "Surah 114, Ayah 3 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 114,
+    "verse": 4,
+    "content": "Surah 114, Ayah 4 (sample structured content)."
+  },
+  {
+    "book": "quran",
+    "chapter": 114,
+    "verse": 5,
+    "content": "Surah 114, Ayah 5 (sample structured content)."
+  }
+]

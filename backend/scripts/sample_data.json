@@ -1,0 +1,20 @@
+[
+  {
+    "book": "bible",
+    "chapter": "1",
+    "verse": "1",
+    "content": "In the beginning God created the heaven and the earth."
+  },
+  {
+    "book": "krishna",
+    "chapter": "1",
+    "verse": "1",
+    "content": "Dhritarashtra said: O Sanjay, what did my sons and the sons of Pandu do when they assembled on the holy field of Kurukshetra, eager for battle?"
+  },
+  {
+    "book": "quran",
+    "chapter": "1",
+    "verse": "1",
+    "content": "In the name of Allah, the Most Gracious, the Most Merciful."
+  }
+]

@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Default to dark mode for premium feel */
+  --bg-primary: #0f172a; /* Slate 900 */
+  --bg-secondary: #1e293b; /* Slate 800 */
+  --bg-glass: rgba(30, 41, 59, 0.6);
+  --text-primary: #f8fafc; /* Slate 50 */
+  --text-secondary: #94a3b8; /* Slate 400 */
+  --border-color: rgba(255, 255, 255, 0.1);
+
+  /* Thematic Colors */
+  --theme-krishna: #f59e0b; /* Amber 500 */
+  --theme-krishna-glow: rgba(245, 158, 11, 0.2);
+  --theme-bible: #3b82f6; /* Blue 500 */
+  --theme-bible-glow: rgba(59, 130, 246, 0.2);
+  --theme-quran: #10b981; /* Emerald 500 */
+  --theme-quran-glow: rgba(16, 185, 129, 0.2);
+
+  --font-body: 'Outfit', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  overflow: hidden;
+}
+
+/* Glassmorphism Utilities */
+.glass-panel {
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #fff, #94a3b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Base Layouts */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.animate-delay-1 { animation-delay: 0.1s; }
+.animate-delay-2 { animation-delay: 0.2s; }
+.animate-delay-3 { animation-delay: 0.3s; }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-secondary);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* --- Space & Orbit Animations --- */
+
+.star-trails-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.star-trail {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  animation: spin linear infinite;
+}
+
+/* Beautiful nested rings to look like star trails */
+.trail-1 { width: 30vw; height: 30vw; animation-duration: 80s; border-style: dashed; border-color: rgba(255, 255, 255, 0.08); }
+.trail-2 { width: 45vw; height: 45vw; animation-duration: 120s; animation-direction: reverse; border-color: rgba(255, 255, 255, 0.03); }
+.trail-3 { width: 60vw; height: 60vw; animation-duration: 160s; border-style: dotted; border-color: rgba(255, 255, 255, 0.06); }
+.trail-4 { width: 80vw; height: 80vw; animation-duration: 200s; animation-direction: reverse; border-color: rgba(255, 255, 255, 0.02); }
+.trail-5 { width: 100vw; height: 100vw; animation-duration: 240s; border-style: dashed; border-color: rgba(255, 255, 255, 0.04); }
+
+.static-star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.8);
+  animation: twinkle 4s ease-in-out infinite alternate;
+}
+
+@keyframes spin {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.2; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1.2) translateY(-2px); }
+}
+
+/* The Orbit around title */
+.symbols-orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px; /* Orbit radius */
+  height: 500px;
+  transform: translate(-50%, -50%);
+  animation: spinOrbit 40s linear infinite;
+  z-index: 1;
+  pointer-events: none; /* let clicks pass through to the buttons */
+}
+
+@keyframes spinOrbit {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.orbit-icon-wrapper {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin-top: -32px;
+  margin-left: -32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  /* Counter-rotate to stay upright */
+  animation: counterSpinOrbit 40s linear infinite;
+}
+
+@keyframes counterSpinOrbit {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+
+/* Position exactly on the circle edges */
+.orbit-slot-1 { top: 0; left: 50%; background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.3); color: #f59e0b; }
+.orbit-slot-2 { top: 75%; left: 93.3%; background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.3); color: #3b82f6; }
+.orbit-slot-3 { top: 75%; left: 6.7%; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); color: #10b981; }
+
+/* The shining trails for the orbiting symbols 
+   They trace the path backwards slightly to look like comets. */
+.trail-ring {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border-radius: 50%;
+  -webkit-mask: radial-gradient(circle at center, transparent 48.5%, black 49.5%, black 50%, transparent 51.5%);
+  mask: radial-gradient(circle at center, transparent 48.5%, black 49.5%, black 50%, transparent 51.5%);
+  pointer-events: none;
+  filter: blur(2px) drop-shadow(0 0 8px currentColor);
+}
+
+.trail-ring-1 { color: #f59e0b; background: conic-gradient(from 270deg, transparent 0deg, rgba(245, 158, 11, 0.8) 90deg, transparent 90deg); }
+.trail-ring-2 { color: #3b82f6; background: conic-gradient(from 30deg, transparent 0deg, rgba(59, 130, 246, 0.8) 90deg, transparent 90deg); }
+.trail-ring-3 { color: #10b981; background: conic-gradient(from 150deg, transparent 0deg, rgba(16, 185, 129, 0.8) 90deg, transparent 90deg); }
+
+@media (max-width: 768px) {
+  .symbols-orbit {
+    width: 320px;
+    height: 320px;
+  }
+}

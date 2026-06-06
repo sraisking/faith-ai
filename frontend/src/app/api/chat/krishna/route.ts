@@ -1,0 +1,33 @@
+import { NextResponse } from 'next/server';
+
+const BACKEND_URL = process.env.BACKEND_URL || 'http://localhost:3001';
+
+export async function POST(request: Request) {
+  try {
+    const { message } = await request.json();
+
+    const response = await fetch(`${BACKEND_URL}/api/chat/krishna`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        message,
+        limit: 3,
+        threshold: 0.1,
+      }),
+    });
+
+    if (!response.ok) {
+      const body = await response.text();
+      console.error('Krishna backend error body:', body);
+      return NextResponse.json({ error: 'Backend chat failed' }, { status: 502 });
+    }
+
+    const body = await response.json();
+    return NextResponse.json(body);
+  } catch (error) {
+    console.error('Error in Krishna API:', error);
+    return NextResponse.json({ error: 'Failed to proxy request to backend' }, { status: 500 });
+  }
+}
