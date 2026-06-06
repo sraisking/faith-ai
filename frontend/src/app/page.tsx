@@ -1,9 +1,12 @@
+"use client";
+
 import Link from 'next/link';
 import StarTrails from '@/components/StarTrails';
+import AuthHeader from '@/components/AuthHeader';
 
 export default function Home() {
   return (
-    <main className="main-content" style={{ position: 'relative', justifyContent: 'center', alignItems: 'center', background: 'radial-gradient(circle at center, var(--bg-secondary) 0%, var(--bg-primary) 100%)' }}>
+    <main className="main-content" style={{ position: 'relative', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center', minHeight: '100vh', background: 'radial-gradient(circle at center, var(--bg-secondary) 0%, var(--bg-primary) 100%)', overflowY: 'auto' }}>
 
       {/* Background Star Trails */}
       <StarTrails />
@@ -26,7 +29,20 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container" style={{ textAlign: 'center', zIndex: 10, position: 'relative' }}>
+      {/* Header bar */}
+      <header className="home-header glass-panel">
+        <div className="home-logo">
+          <span>Faith AI</span>
+          <span style={{ fontSize: '1.2rem' }}>✦</span>
+        </div>
+        <nav className="home-nav">
+          <Link href="/" className="home-nav-link hidden-mobile">Home</Link>
+          <AuthHeader inline />
+        </nav>
+      </header>
+
+      {/* Central Hero/Grid Content */}
+      <div className="container" style={{ textAlign: 'center', zIndex: 10, position: 'relative', margin: 'auto 0', padding: '3rem 1rem' }}>
         <h1 className="gradient-text animate-fade-in home-title" style={{ fontSize: '4rem', fontWeight: 700, marginBottom: '1rem', textShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
           Faith AI
         </h1>
@@ -73,6 +89,17 @@ export default function Home() {
 
         </div>
       </div>
+
+      {/* Footer bar */}
+      <footer className="home-footer glass-panel">
+        <div>© 2026 Faith AI. Guided by Ancient Wisdom.</div>
+        <div className="home-footer-links">
+          <a href="#about" className="home-footer-link" onClick={(e) => { e.preventDefault(); alert("Faith AI is a platform offering moral and ethical perspectives rooted in the scriptures of global religions."); }}>About</a>
+          <a href="#dharma" className="home-footer-link" onClick={(e) => { e.preventDefault(); alert("Guided by the teachings of the Bhagavad Gita, the Old and New Testaments, and Islamic scriptures."); }}>Dharma</a>
+          <a href="#privacy" className="home-footer-link" onClick={(e) => { e.preventDefault(); alert("Your chat sessions are stored securely in Supabase. Beta user data is protected."); }}>Privacy</a>
+        </div>
+      </footer>
+
     </main>
   );
 }

@@ -5,6 +5,7 @@ import { Send, ArrowLeft, Loader2, Mic, Volume2, Menu, X, Clock } from 'lucide-r
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import { createClient } from '@/utils/supabase/client';
+import AuthHeader from '@/components/AuthHeader';
 
 interface Message {
   id: string;
@@ -253,7 +254,7 @@ export default function ChatInterface({ title, themeColor, apiEndpoint, welcomeM
       {/* Header */}
       <header className="glass-panel chat-header" style={{ 
         margin: '1rem', 
-        padding: '1rem 12rem 1rem 2rem', // Added right padding to prevent overlap with global AuthHeader
+        padding: '1rem 1.5rem', 
         display: 'flex', 
         alignItems: 'center', 
         justifyContent: 'space-between',
@@ -271,7 +272,8 @@ export default function ChatInterface({ title, themeColor, apiEndpoint, welcomeM
           </Link>
           <h1 style={{ fontSize: '1.25rem', fontWeight: 600 }}>{title}</h1>
         </div>
-        <div style={{ display: 'flex', gap: '0.5rem' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+          <AuthHeader inline />
           {user && (
             <button onClick={() => { 
               setMessages([{ id: '1', role: 'assistant', content: welcomeMessage }]); 
@@ -298,6 +300,17 @@ export default function ChatInterface({ title, themeColor, apiEndpoint, welcomeM
 
       {/* Chat Area */}
       <div className="container chat-messages-container" style={{ flex: 1, overflowY: 'auto', padding: '1rem 0', display: 'flex', flexDirection: 'column', gap: '1.5rem', width: '100%', maxWidth: '800px' }}>
+        {!user && (
+          <div className="guest-banner animate-fade-in">
+            <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <span>💡</span>
+              <span><strong>Beta Version:</strong> Guest chat history is saved locally. Sign in to save your conversations to the database and sync across devices.</span>
+            </span>
+            <Link href="/login" className="guest-banner-btn">
+              Sign In
+            </Link>
+          </div>
+        )}
         {messages.map((msg) => (
           <div key={msg.id} style={{
             display: 'flex',

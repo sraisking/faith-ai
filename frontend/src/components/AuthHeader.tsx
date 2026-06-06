@@ -5,7 +5,7 @@ import { createClient } from "@/utils/supabase/client";
 import Link from "next/link";
 import { User } from "@supabase/supabase-js";
 
-export default function AuthHeader() {
+export default function AuthHeader({ inline = false }: { inline?: boolean }) {
   const [user, setUser] = useState<User | null>(null);
   const supabase = createClient();
 
@@ -27,8 +27,12 @@ export default function AuthHeader() {
     await supabase.auth.signOut();
   };
 
+  const containerStyles = inline
+    ? { display: 'flex', alignItems: 'center', gap: '1rem' }
+    : { position: 'absolute', top: '1rem', right: '1rem', zIndex: 50, display: 'flex', alignItems: 'center', gap: '1rem' };
+
   return (
-    <div className="auth-header-container" style={{ position: 'absolute', top: '1rem', right: '1rem', zIndex: 50, display: 'flex', alignItems: 'center', gap: '1rem' }}>
+    <div className={inline ? "auth-header-inline" : "auth-header-container"} style={containerStyles}>
       {user ? (
         <>
           <span style={{ color: 'var(--text-secondary)', fontSize: '0.875rem' }} className="hidden-mobile">

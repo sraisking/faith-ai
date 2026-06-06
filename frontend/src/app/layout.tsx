@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import AuthHeader from '@/components/AuthHeader';
 
 export const metadata: Metadata = {
   title: 'Faith AI | Ask Krishna, Bible, Quran',
@@ -15,7 +14,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <AuthHeader />
         {children}
       </body>
     </html>
