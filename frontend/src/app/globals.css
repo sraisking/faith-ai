@@ -28,11 +28,11 @@
 
 html, body {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--bg-primary);
   color: var(--text-primary);
   font-family: var(--font-body);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* Glassmorphism Utilities */
@@ -114,7 +114,7 @@ html, body {
 /* --- Space & Orbit Animations --- */
 
 .star-trails-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -451,7 +451,7 @@ html, body {
   }
 
   .home-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    grid-template-columns: 1fr !important;
     gap: 1.25rem !important;
   }
 

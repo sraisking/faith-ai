@@ -6,7 +6,7 @@ import AuthHeader from '@/components/AuthHeader';
 
 export default function Home() {
   return (
-    <main className="main-content" style={{ position: 'relative', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center', minHeight: '100vh', background: 'radial-gradient(circle at center, var(--bg-secondary) 0%, var(--bg-primary) 100%)', overflowY: 'auto' }}>
+    <main className="main-content" style={{ position: 'relative', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center', minHeight: '100vh', height: 'auto', background: 'radial-gradient(circle at center, var(--bg-secondary) 0%, var(--bg-primary) 100%)' }}>
 
       {/* Background Star Trails */}
       <StarTrails />
