@@ -4,7 +4,7 @@ import { GoogleGenAI } from '@google/genai';
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || '' });
 
 async function generateAIContent(prompt: string, config: any = {}) {
-  const models = ["gemini-1.5-flash", "gemini-2.5-flash", "gemini-3.5-flash"];
+  const models = ["gemini-3.5-flash", "gemini-2.5-flash", "gemini-1.5-flash"];
   let lastError: any = null;
   for (const model of models) {
     try {

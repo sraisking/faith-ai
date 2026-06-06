@@ -106,7 +106,7 @@ async function generateAIContent(prompt, config = {}) {
   if (!process.env.GEMINI_API_KEY) {
     throw new Error("No AI configured");
   }
-  const models = ["gemini-1.5-flash", "gemini-2.5-flash", "gemini-3.5-flash"];
+  const models = ["gemini-3.5-flash", "gemini-2.5-flash", "gemini-1.5-flash"];
   let lastError = null;
   for (const model of models) {
     try {
