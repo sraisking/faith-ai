@@ -1,0 +1,42 @@
+name: EC2 Continuous Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to EC2 via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          port: 22
+          script: |
+            echo "Starting deployment..."
+            cd /home/ec2-user/faith-ai
+            
+            # Fetch latest changes
+            git fetch --all
+            git reset --hard origin/main
+            
+            # Ensure env files are matched in the build directory
+            cp /home/ec2-user/faith-ai/.env.local /home/ec2-user/faith-ai/frontend/.env.local
+            
+            # Load NVM and update dependencies and builds
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+            nvm use 20
+            
+            # Install & Build
+            npm run install:all
+            npm run build:frontend
+            
+            # Restart services
+            pm2 restart all
+            pm2 save
+            echo "Deployment successfully completed!"

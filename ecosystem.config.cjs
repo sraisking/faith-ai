@@ -13,7 +13,7 @@ module.exports = {
       name: "faith-ai-frontend",
       cwd: "./frontend",
       script: "node_modules/next/dist/bin/next",
-      args: "start -p 3000",
+      args: "start -p 3000 -H 0.0.0.0",
       env: {
         PORT: 3000,
         NODE_ENV: "production"
