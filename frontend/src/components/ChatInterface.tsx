@@ -38,6 +38,7 @@ export default function ChatInterface({ title, themeColor, apiEndpoint, welcomeM
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [user, setUser] = useState<AuthUser | null>(null);
   const [loadingMessageIdx, setLoadingMessageIdx] = useState(0);
+  const [guestChatCount, setGuestChatCount] = useState<number>(0);
 
   const [placeholder, setPlaceholder] = useState("Ask about what is right or wrong... (or tap mic to speak in any language)");
 
@@ -99,6 +100,34 @@ export default function ChatInterface({ title, themeColor, apiEndpoint, welcomeM
   useEffect(() => {
     scrollToBottom();
   }, [messages]);
+
+  // Get guest chat count on mount and when user auth state changes
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const getInitialGuestCount = () => {
+        const countStr = localStorage.getItem('faith_ai_guest_chat_count');
+        if (countStr !== null) {
+          return parseInt(countStr, 10) || 0;
+        }
+        // Fallback: sum up user messages from the saved chats of all themes
+        let count = 0;
+        ['krishna', 'bible', 'quran'].forEach(theme => {
+          try {
+            const saved = localStorage.getItem(`faith-ai-chat-${theme}`);
+            if (saved) {
+              const msgs = JSON.parse(saved);
+              if (Array.isArray(msgs)) {
+                count += msgs.filter((m: any) => m.role === 'user').length;
+              }
+            }
+          } catch (e) {}
+        });
+        localStorage.setItem('faith_ai_guest_chat_count', count.toString());
+        return count;
+      };
+      setGuestChatCount(getInitialGuestCount());
+    }
+  }, [user]);
 
   // Load previous chats
   useEffect(() => {
@@ -237,6 +266,17 @@ export default function ChatInterface({ title, themeColor, apiEndpoint, welcomeM
     e.preventDefault();
     if (!input.trim() || isLoading) return;
 
+    if (!user && guestChatCount >= 10) {
+      alert("You have reached the limit of 10 free chats. Please sign in.");
+      return;
+    }
+
+    if (!user) {
+      const nextCount = guestChatCount + 1;
+      setGuestChatCount(nextCount);
+      localStorage.setItem('faith_ai_guest_chat_count', nextCount.toString());
+    }
+
     const userMsg: Message = { id: Date.now().toString(), role: 'user', content: input.trim() };
     setMessages(prev => [...prev, userMsg]);
     setInput('');
@@ -340,12 +380,32 @@ export default function ChatInterface({ title, themeColor, apiEndpoint, welcomeM
       {/* Chat Area */}
       <div className="container chat-messages-container" style={{ flex: 1, overflowY: 'auto', padding: '1rem 0', display: 'flex', flexDirection: 'column', gap: '1.5rem', width: '100%', maxWidth: '800px' }}>
         {!user && (
-          <div className="guest-banner animate-fade-in">
+          <div 
+            className="guest-banner animate-fade-in" 
+            style={
+              guestChatCount >= 10 
+                ? { borderColor: 'rgba(239, 68, 68, 0.4)', background: 'rgba(239, 68, 68, 0.08)', color: '#ef4444' } 
+                : undefined
+            }
+          >
             <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <span>💡</span>
-              <span><strong>Beta Version:</strong> Guest chat history is saved locally. Sign in to save your conversations to the database and sync across devices.</span>
+              {guestChatCount >= 10 ? (
+                <>
+                  <span>⚠️</span>
+                  <span><strong>Limit Reached:</strong> You have used all 10 of your free guest chats. Please sign in to save your history and continue.</span>
+                </>
+              ) : (
+                <>
+                  <span>💡</span>
+                  <span><strong>Guest Chat:</strong> You have used <strong>{guestChatCount}</strong> of <strong>10</strong> free chats. Sign in to save conversations and get unlimited access.</span>
+                </>
+              )}
             </span>
-            <Link href="/login" className="guest-banner-btn">
+            <Link 
+              href="/login" 
+              className="guest-banner-btn" 
+              style={guestChatCount >= 10 ? { background: '#ef4444', color: '#fff' } : undefined}
+            >
               Sign In
             </Link>
           </div>
@@ -477,7 +537,7 @@ export default function ChatInterface({ title, themeColor, apiEndpoint, welcomeM
           <button
             type="button"
             onClick={startListening}
-            disabled={!user && messages.filter(m => m.role === 'user').length >= 2}
+            disabled={!user && guestChatCount >= 10}
             style={{
               background: isListening ? '#ef4444' : 'var(--bg-secondary)',
               color: isListening ? '#fff' : 'var(--text-secondary)',
@@ -488,10 +548,10 @@ export default function ChatInterface({ title, themeColor, apiEndpoint, welcomeM
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              cursor: (!user && messages.filter(m => m.role === 'user').length >= 2) ? 'not-allowed' : 'pointer',
+              cursor: (!user && guestChatCount >= 10) ? 'not-allowed' : 'pointer',
               transition: 'background 0.2s, color 0.2s',
               flexShrink: 0,
-              opacity: (!user && messages.filter(m => m.role === 'user').length >= 2) ? 0.5 : 1
+              opacity: (!user && guestChatCount >= 10) ? 0.5 : 1
             }}
             title={isListening ? "Listening..." : "Speak"}
           >
@@ -501,8 +561,8 @@ export default function ChatInterface({ title, themeColor, apiEndpoint, welcomeM
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            disabled={!user && messages.filter(m => m.role === 'user').length >= 2}
-            placeholder={(!user && messages.filter(m => m.role === 'user').length >= 2) ? "Free limit reached. Please sign in." : placeholder}
+            disabled={!user && guestChatCount >= 10}
+            placeholder={(!user && guestChatCount >= 10) ? "Free limit reached. Please sign in." : placeholder}
             className="glass-panel"
             style={{
               flex: 1,
@@ -514,14 +574,14 @@ export default function ChatInterface({ title, themeColor, apiEndpoint, welcomeM
               outline: 'none',
               borderRadius: '24px',
               transition: 'border-color 0.2s',
-              cursor: (!user && messages.filter(m => m.role === 'user').length >= 2) ? 'not-allowed' : 'text',
+              cursor: (!user && guestChatCount >= 10) ? 'not-allowed' : 'text',
             }}
             onFocus={(e) => e.target.style.borderColor = themeVar}
             onBlur={(e) => e.target.style.borderColor = 'var(--border-color)'}
           />
           <button
             type="submit"
-            disabled={isLoading || !input.trim() || (!user && messages.filter(m => m.role === 'user').length >= 2)}
+            disabled={isLoading || !input.trim() || (!user && guestChatCount >= 10)}
             style={{
               background: themeVar,
               color: '#fff',
@@ -532,8 +592,8 @@ export default function ChatInterface({ title, themeColor, apiEndpoint, welcomeM
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              cursor: (isLoading || !input.trim() || (!user && messages.filter(m => m.role === 'user').length >= 2)) ? 'not-allowed' : 'pointer',
-              opacity: (isLoading || !input.trim() || (!user && messages.filter(m => m.role === 'user').length >= 2)) ? 0.6 : 1,
+              cursor: (isLoading || !input.trim() || (!user && guestChatCount >= 10)) ? 'not-allowed' : 'pointer',
+              opacity: (isLoading || !input.trim() || (!user && guestChatCount >= 10)) ? 0.6 : 1,
               transition: 'transform 0.2s, box-shadow 0.2s',
               boxShadow: `0 4px 12px ${themeGlowVar}`,
               flexShrink: 0

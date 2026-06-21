@@ -21,7 +21,12 @@ export async function POST(request: Request) {
     if (!response.ok) {
       const body = await response.text();
       console.error('Krishna backend error body:', body);
-      return NextResponse.json({ error: 'Backend chat failed' }, { status: 502 });
+      try {
+        const parsed = JSON.parse(body);
+        return NextResponse.json({ error: parsed.error || parsed.details || body }, { status: response.status });
+      } catch (e) {
+        return NextResponse.json({ error: `Backend chat failed: ${body}` }, { status: response.status });
+      }
     }
 
     const body = await response.json();
