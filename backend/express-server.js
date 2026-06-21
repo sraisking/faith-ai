@@ -14,12 +14,12 @@ const JWT_SECRET = process.env.JWT_SECRET || "faith_ai_super_secret_jwt_key_999"
 let aiChat = null;
 let aiEmbeddings = null;
 
-if (process.env.AZURE_OPENAI_API_KEY && process.env.AZURE_OPENAI_ENDPOINT) {
+  if (process.env.AZURE_OPENAI_API_KEY && process.env.AZURE_OPENAI_ENDPOINT) {
   if (process.env.AZURE_OPENAI_CHAT_DEPLOYMENT) {
     aiChat = new OpenAI({
       apiKey: process.env.AZURE_OPENAI_API_KEY,
       baseURL: `${process.env.AZURE_OPENAI_ENDPOINT}/openai/deployments/${process.env.AZURE_OPENAI_CHAT_DEPLOYMENT}`,
-      defaultQuery: { "api-version": "2024-02-01" },
+      defaultQuery: { "api-version": "2024-12-01-preview" },
       defaultHeaders: { "api-key": process.env.AZURE_OPENAI_API_KEY },
     });
     console.log("Azure OpenAI Chat client initialized.");
@@ -170,13 +170,18 @@ Output ONLY the category name: GREETING, SPIRITUAL_ETHICAL, or OUT_OF_CONTEXT. D
 // 🧠 Helper to build prompt
 function buildPrompt(question, context) {
   return `
-You are a calm, neutral religious assistant.
+You are a calm, warm, and wise spiritual assistant.
 
 Answer the user's question clearly, warmly, and directly.
-Use the provided scripture contexts to formulate your response.
+Formulate a cohesive response using the provided scripture contexts.
+
+Instructions for Bhagavad Gita verses (if present):
+- The context provides Sanskrit text, transliteration, and a list of word meanings under "Meaning".
+- You must synthesize these word-by-word meanings into a coherent, fluid English translation and explanation.
+- Do not repeat the word-by-word list format. Deliver the wisdom in natural, readable, and inspiring English.
 
 Rules:
-- Provide a clear, cohesive, and easily understandable summary.
+- Provide a clear, cohesive, and easily understandable response.
 - Keep the answer concise (3–5 lines).
 - Avoid raw JSON fragments, technical fields, or metadata.
 - Cite the book, chapter, and verse references (e.g. Bhagavad Gita 2.47).
@@ -552,7 +557,7 @@ app.post("/api/chat/krishna", async (req, res) => {
       .map((v) => `Bhagavad Gita ${v.chapter}:${v.verse}`)
       .join("; ");
 
-    const prompt = buildPrompt(sanitized, context);
+    const prompt = buildPrompt(message, context);
     let reply;
 
     try {
@@ -561,11 +566,12 @@ app.post("/api/chat/krishna", async (req, res) => {
     } catch (err) {
       console.error("Azure OpenAI LLM failed, using fallback:", err.message);
       // Smart Fallback
-      reply = filtered
-        .map((v) => v.content.split("\n")[0])
-        .slice(0, 2)
-        .join(" ");
-      reply = `Based on Bhagavad Gita teachings: ${reply}`;
+      try {
+        const parsed = JSON.parse(filtered[0].content);
+        reply = `I'm having trouble connecting to my reasoning engine, but based on Bhagavad Gita ${filtered[0].chapter}:${filtered[0].verse}, the verse teaches: ${parsed.meaning || parsed.transliteration || filtered[0].content}`;
+      } catch (e) {
+        reply = `I'm having trouble connecting to my reasoning engine, but Bhagavad Gita teaches: ${filtered[0].content}`;
+      }
     }
 
     res.json({ reply, reference, verses: data });
@@ -630,7 +636,8 @@ app.post("/api/chat/bible", async (req, res) => {
       reply = response.text;
     } catch (err) {
       console.error("Azure OpenAI LLM failed, using fallback:", err.message);
-      reply = `Based on Bible teachings: ` + filtered.map((v) => v.content.split("\n")[0]).slice(0, 2).join(" ");
+      // Smart Fallback
+      reply = `I'm having trouble connecting to my reasoning engine, but based on ${filtered[0].book} ${filtered[0].chapter}:${filtered[0].verse}: "${formatVerseContent(filtered[0].content)}"`;
     }
     res.json({ reply, reference, verses: data });
   } catch (error) {
@@ -694,7 +701,8 @@ app.post("/api/chat/quran", async (req, res) => {
       reply = response.text;
     } catch (err) {
       console.error("Azure OpenAI LLM failed, using fallback:", err.message);
-      reply = `Based on Quranic teachings: ` + filtered.map((v) => v.content.split("\n")[0]).slice(0, 2).join(" ");
+      // Smart Fallback
+      reply = `I'm having trouble connecting to my reasoning engine, but based on ${filtered[0].book} ${filtered[0].chapter}:${filtered[0].verse}: "${formatVerseContent(filtered[0].content)}"`;
     }
     res.json({ reply, reference, verses: data });
   } catch (error) {
