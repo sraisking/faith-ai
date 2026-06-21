@@ -1,33 +1,31 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { createClient } from "@/utils/supabase/client";
+import { authClient, AuthUser } from "@/utils/auth";
 import Link from "next/link";
-import { User } from "@supabase/supabase-js";
 
 export default function AuthHeader({ inline = false }: { inline?: boolean }) {
-  const [user, setUser] = useState<User | null>(null);
-  const supabase = createClient();
+  const [user, setUser] = useState<AuthUser | null>(null);
 
   useEffect(() => {
-    supabase.auth.getUser().then(({ data: { user } }) => {
-      setUser(user);
+    authClient.getUser().then((currUser) => {
+      setUser(currUser);
     });
 
-    const {
-      data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, session) => {
-      setUser(session?.user ?? null);
-    });
+    const handleAuthChange = () => {
+      authClient.getUser().then(setUser);
+    };
 
-    return () => subscription.unsubscribe();
-  }, [supabase.auth]);
+    window.addEventListener("auth-state-change", handleAuthChange);
+    return () => window.removeEventListener("auth-state-change", handleAuthChange);
+  }, []);
 
   const handleSignOut = async () => {
-    await supabase.auth.signOut();
+    authClient.logout();
+    setUser(null);
   };
 
-  const containerStyles = inline
+  const containerStyles: React.CSSProperties = inline
     ? { display: 'flex', alignItems: 'center', gap: '1rem' }
     : { position: 'absolute', top: '1rem', right: '1rem', zIndex: 50, display: 'flex', alignItems: 'center', gap: '1rem' };
 
@@ -36,7 +34,7 @@ export default function AuthHeader({ inline = false }: { inline?: boolean }) {
       {user ? (
         <>
           <span style={{ color: 'var(--text-secondary)', fontSize: '0.875rem' }} className="hidden-mobile">
-            {user.email || user.phone}
+            {user.email}
           </span>
           <button
             onClick={handleSignOut}

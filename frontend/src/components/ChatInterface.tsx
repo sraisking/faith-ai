@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Send, ArrowLeft, Loader2, Mic, Volume2, Menu, X, Clock } from 'lucide-react';
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
-import { createClient } from '@/utils/supabase/client';
+import { authClient, AuthUser } from '@/utils/auth';
 import AuthHeader from '@/components/AuthHeader';
 
 interface Message {
@@ -36,9 +36,8 @@ export default function ChatInterface({ title, themeColor, apiEndpoint, welcomeM
   const [chatId, setChatId] = useState<string | null>(null);
   const [allChats, setAllChats] = useState<{id: string, created_at: string, messages: Message[]}[]>([]);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState<AuthUser | null>(null);
   const [loadingMessageIdx, setLoadingMessageIdx] = useState(0);
-  const supabase = createClient();
 
   const [placeholder, setPlaceholder] = useState("Ask about what is right or wrong... (or tap mic to speak in any language)");
 
@@ -104,25 +103,32 @@ export default function ChatInterface({ title, themeColor, apiEndpoint, welcomeM
   // Load previous chats
   useEffect(() => {
     async function loadChats() {
-      const { data: { user } } = await supabase.auth.getUser();
-      setUser(user);
-      if (user) {
-        const { data, error } = await supabase
-          .from('chats')
-          .select('id, created_at, messages')
-          .eq('theme', themeColor)
-          .order('created_at', { ascending: false });
-        
-        if (data && data.length > 0) {
-          setAllChats(data);
-          setChatId(data[0].id);
-          setMessages(data[0].messages);
-        } else {
-          // Check local storage for migrate
-          const saved = localStorage.getItem(`faith-ai-chat-${themeColor}`);
-          if (saved) {
-            try { setMessages(JSON.parse(saved)); } catch (e) {}
+      const currentUser = await authClient.getUser();
+      setUser(currentUser);
+      if (currentUser) {
+        const token = authClient.getToken();
+        const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:3001';
+        try {
+          const res = await fetch(`${backendUrl}/api/chats?theme=${themeColor}`, {
+            headers: {
+              'Authorization': `Bearer ${token}`
+            }
+          });
+          if (res.ok) {
+            const data = await res.json();
+            if (data && data.length > 0) {
+              setAllChats(data);
+              setChatId(data[0].id);
+              setMessages(data[0].messages);
+            } else {
+              const saved = localStorage.getItem(`faith-ai-chat-${themeColor}`);
+              if (saved) {
+                try { setMessages(JSON.parse(saved)); } catch (e) {}
+              }
+            }
           }
+        } catch (e) {
+          console.error("Error loading chats from backend", e);
         }
       } else {
         const saved = localStorage.getItem(`faith-ai-chat-${themeColor}`);
@@ -136,7 +142,13 @@ export default function ChatInterface({ title, themeColor, apiEndpoint, welcomeM
       }
     }
     loadChats();
-  }, [themeColor, supabase]);
+
+    const handleAuthChange = () => {
+      loadChats();
+    };
+    window.addEventListener('auth-state-change', handleAuthChange);
+    return () => window.removeEventListener('auth-state-change', handleAuthChange);
+  }, [themeColor]);
 
   // Save chats
   useEffect(() => {
@@ -144,28 +156,43 @@ export default function ChatInterface({ title, themeColor, apiEndpoint, welcomeM
       if (messages.length > 1) { // Save only if there's actual conversation
         localStorage.setItem(`faith-ai-chat-${themeColor}`, JSON.stringify(messages));
         
-        const { data: { user } } = await supabase.auth.getUser();
-        if (user) {
+        const currentUser = await authClient.getUser();
+        if (currentUser) {
+          const token = authClient.getToken();
+          const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:3001';
           if (chatId) {
-            await supabase.from('chats').update({ messages }).eq('id', chatId);
+            await fetch(`${backendUrl}/api/chats/${chatId}`, {
+              method: 'PUT',
+              headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
+              },
+              body: JSON.stringify({ messages })
+            });
             setAllChats(prev => prev.map(c => c.id === chatId ? { ...c, messages } : c));
           } else {
-            const { data, error } = await supabase.from('chats').insert({
-              user_id: user.id,
-              theme: themeColor,
-              messages: messages
-            }).select('id, created_at, messages').single();
+            const res = await fetch(`${backendUrl}/api/chats`, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
+              },
+              body: JSON.stringify({ theme: themeColor, messages })
+            });
             
-            if (data) {
-              setChatId(data.id);
-              setAllChats(prev => [data, ...prev]);
+            if (res.ok) {
+              const data = await res.json();
+              if (data) {
+                setChatId(data.id);
+                setAllChats(prev => [data, ...prev]);
+              }
             }
           }
         }
       }
     }
     syncChats();
-  }, [messages, themeColor, chatId, supabase]);
+  }, [messages, themeColor, chatId]);
 
   const startListening = () => {
     const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
@@ -216,9 +243,14 @@ export default function ChatInterface({ title, themeColor, apiEndpoint, welcomeM
     setIsLoading(true);
 
     try {
+      const headers: HeadersInit = { 'Content-Type': 'application/json' };
+      const token = authClient.getToken();
+      if (token) {
+        headers['Authorization'] = `Bearer ${token}`;
+      }
       const res = await fetch(apiEndpoint, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers,
         body: JSON.stringify({ message: userMsg.content })
       });
       
@@ -287,7 +319,14 @@ export default function ChatInterface({ title, themeColor, apiEndpoint, welcomeM
               localStorage.removeItem(`faith-ai-chat-${themeColor}`); 
               setMessages([{ id: '1', role: 'assistant', content: welcomeMessage }]); 
               if (chatId) {
-                await supabase.from('chats').delete().eq('id', chatId);
+                const token = authClient.getToken();
+                const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:3001';
+                await fetch(`${backendUrl}/api/chats/${chatId}`, {
+                  method: 'DELETE',
+                  headers: {
+                    'Authorization': `Bearer ${token}`
+                  }
+                });
                 setAllChats(prev => prev.filter(c => c.id !== chatId));
                 setChatId(null);
               }

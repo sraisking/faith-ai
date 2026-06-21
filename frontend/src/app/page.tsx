@@ -96,7 +96,7 @@ export default function Home() {
         <div className="home-footer-links">
           <a href="#about" className="home-footer-link" onClick={(e) => { e.preventDefault(); alert("Faith AI is a platform offering moral and ethical perspectives rooted in the scriptures of global religions."); }}>About</a>
           <a href="#dharma" className="home-footer-link" onClick={(e) => { e.preventDefault(); alert("Guided by the teachings of the Bhagavad Gita, the Old and New Testaments, and Islamic scriptures."); }}>Dharma</a>
-          <a href="#privacy" className="home-footer-link" onClick={(e) => { e.preventDefault(); alert("Your chat sessions are stored securely in Supabase. Beta user data is protected."); }}>Privacy</a>
+          <a href="#privacy" className="home-footer-link" onClick={(e) => { e.preventDefault(); alert("Your chat sessions are stored securely in our database. Beta user data is protected."); }}>Privacy</a>
         </div>
       </footer>
 
