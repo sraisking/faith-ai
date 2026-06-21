@@ -470,7 +470,8 @@ html, body {
     font-size: 1.1rem !important;
   }
 
-  .chat-header button {
+  .chat-header button,
+  .auth-header-inline a {
     padding: 0.4rem 0.75rem !important;
     font-size: 0.85rem !important;
     border-radius: 6px !important;
